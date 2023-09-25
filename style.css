@@ -257,7 +257,7 @@ nav ul li a{
     background: #fff;
     padding-top: 70vh;
     padding-left: 14rem;
-    padding-right: 14rem;
+    padding-right: 10rem;
     font-family: 'Bebas Neue', sans-serif;
 }
 .excom-container span{
@@ -310,6 +310,7 @@ nav ul li a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 6rem;
+    margin-left: 3rem;
 }
 .member-card-img{
     border-radius: 40px;
@@ -371,21 +372,36 @@ footer{
 }
 @media (max-width: 480px){
     body{
-        background: linear-gradient(rgba(0, 0, 255, 0.411), #e66464d3);
+        background: white;
+        box-sizing: border-box;
+        width: fit-content;
+    }
+    nav{
+        display: none;
     }
    .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        width: 100%;
         background-size: cover;
         padding: 0 16px;
         flex-direction: column;
-        height: fit-content;
-        padding-bottom: 4rem;
+        height: 124vh;
     }
     .join-text-container{
         padding: 0;
         margin: 0;
     }
+    .container .imgBx img{
+        width:max-content;
+        height: 100%;
+        
+    }
     .about{
         padding: 10px 10px;
+        height: 45vh;
     }
     .about h1{
         margin: 0;
