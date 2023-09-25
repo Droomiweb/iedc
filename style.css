@@ -1,0 +1,440 @@
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+
+nav ul{
+    position: absolute;
+    right: 0;
+    list-style: none;
+    display: flex;
+    flex-direction:row;
+    justify-content: end;
+    margin-right: 70px;
+    color: white;
+    scale: 0.8;
+}
+nav ul li{
+    padding-left: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+nav ul li:hover{
+    scale:1.1;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.iedc-text{
+    padding-left: 8rem;
+    padding-top:5rem;
+}
+.container{
+    display: flex;
+    max-width: 100%;
+    height: 90vh;
+    background: transparent;
+    background-position: center;
+    background-size: cover;
+    z-index: 1000;
+}
+
+.container .imgBx img{
+    position: fixed;
+    width: 100%;
+    z-index: -100; 
+    height: 100vh;
+    
+}
+.iedc-text{
+    display: flex;
+    scale: 0.5;
+}
+.line{
+    width: 10px;
+    height: 350px;
+    background-color: white;
+    margin-top: 60px;
+    margin-right: 4rem;
+}
+.text-iedc{
+    font-size: 90px;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.join-text-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 13rem;
+    margin-left: 32rem;
+    scale: 0.7;
+}
+.college-name{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 46px;
+}
+.college-name p{
+    margin: 0;
+}
+.btn-join{
+    align-self: center;
+    border: none;
+    background-color: #ff0b00c5;
+    padding: 16px 24px;
+    font-family: roboto;
+    color: white;
+    font-size: large;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: scale .15s;
+}
+.btn-join:hover{
+    background-color: #ff0d00e3;
+    scale: 1.1;
+}
+
+/* --------------------------slider----------------- */
+
+.slider{
+    position: relative;
+    left: 50%;
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transform: translate(-50%, 400px);
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+    background-color: #fff;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+    object-fit: cover;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 700px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #fff;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  #radio5:checked ~ .first{
+    margin-left: -80%;
+  }
+  #radio6:checked ~ .first{
+    margin-left: -100%;
+  }
+  #radio7:checked ~ .first{
+    margin-left: -120%;
+  }
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #fff;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #fff;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #fff;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #fff;
+  }
+
+  #radio5:checked ~ .navigation-auto .auto-btn5{
+    background: #fff;
+  }
+  #radio6:checked ~ .navigation-auto .auto-btn6{
+    background: #fff;
+  }
+  #radio7:checked ~ .navigation-auto .auto-btn7{
+    background: #fff;
+  }
+
+
+
+.about{
+    padding: 3rem 13rem;
+    height: 100vh;
+    background-color: #fff;
+}
+.img-container{
+    background-color: #fff;
+    position: relative;
+}
+.img-container .img-innovation{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    width: 800px;
+}
+.excom-container{
+    background: #fff;
+    padding-top: 70vh;
+    padding-left: 14rem;
+    padding-right: 14rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.excom-container span{
+    font-size: 50px;
+}
+.excom-container .card-image{
+    border: 1px solid #0000008e;
+}
+.excom-container .card-image:hover{
+    box-shadow: 0 0 3px #000;
+}
+.lead-card{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    box-shadow: 0 0 3px #000;
+    margin: 8px;
+    padding-top:-20px;
+    border-radius: 20px;
+    width: 100%;
+}
+.load-card:hover{
+    
+    box-shadow: 0 0 6px #000;
+}
+
+.card-image,
+.member-card-img{
+    width: 15rem;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 15rem;
+    margin: 7px;
+    border: 1px solid black;
+}
+.leads-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.card-2{
+    width: 100%;
+    flex-direction: row-reverse;
+    align-self: flex-end;
+}
+.members-container{
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 6rem;
+}
+.member-card-img{
+    border-radius: 40px;
+    height: 20rem;
+    width: 15rem;
+}
+.member-card .card-desc{
+    text-align: center;
+    padding-top: 8px;
+    font-family: 'Roboto Mono', monospace;
+}
+.member-card .name{
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+.member-card .job-role{
+    margin: 0;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+
+footer{
+    padding-top: 30px;
+    height: 40vh;
+    background: linear-gradient(transparent, #000 100%);
+    padding: 50px;
+}
+.footer-divider{
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+}
+.footer{
+    margin-top: 120px;
+    text-align: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.footer span{
+    font-size: larger;
+}
+.footer .conntact-address{
+    flex: 3;
+}
+.footer .logos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.footer .logos img{
+    width: 120px;
+    height: 60px;
+}
+
+.contact-address{
+    color: #fff;
+}
+@media (max-width: 480px){
+    body{
+        background: linear-gradient(rgba(0, 0, 255, 0.411), #e66464d3);
+    }
+   .container{
+        background-size: cover;
+        padding: 0 16px;
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 4rem;
+    }
+    .join-text-container{
+        padding: 0;
+        margin: 0;
+    }
+    .about{
+        padding: 10px 10px;
+    }
+    .about h1{
+        margin: 0;
+        font-size: larger;
+    }
+    .img-container .img-innovation{
+        width: 350px;
+    }
+    .excom-container{
+        padding: 0;
+        padding-top: 200px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .card-image,
+    .member-card-img{
+    width: 8rem;
+    height: 8rem;
+    }
+    .lead-card{
+        gap: 2rem;
+        margin-bottom: 10px;
+    }
+    .card-desc p
+    {
+        font-size: 14px;
+        margin: 0;
+    }
+    .members-container{
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+    .lead-card{
+        gap: 10px;
+    }
+    .card-2 .card-desc{
+        text-align: end;
+    }
+    .member-card{
+        display: flex;
+        align-items: center;
+    }
+    .member-card-img{
+        margin-right: 2rem;
+    }
+    .footer{
+        margin-top: 40px;
+    }
+   }
